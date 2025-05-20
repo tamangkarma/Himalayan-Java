@@ -7,13 +7,22 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"]
+        sans: ["Poppins", "sans-serif"],
+        cursive: ["Brithstone"]
       },
       colors: {
-        primary: "#854d3d",
-        secondary: "#4a1e1b",
-        brandDark: "#270c03",
+        primary: "#99582a",
+        secondary: "#bb9457",
+        fontcolor: "#9c6644",
+        brandDark: "#582f0e",
       },
+      container: {
+        center: true,
+        padding: {
+          default: "1rem",
+          sm:"2rem",
+        }
+      }
     },
   },
   plugins: [],

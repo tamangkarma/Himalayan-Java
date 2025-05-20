@@ -13,5 +13,10 @@ export const navData = [
         id: 3,
         title: "Contact",
         url: "/contact"
+    },
+    {
+        id: 4,
+        title: "Franchise",
+        url: "/franchise"
     }
 ]
