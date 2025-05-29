@@ -1,4 +1,5 @@
 import Heroimg from "../../public/coffee photo/heroimg.png"
+import Services from "./Services"
 const Homepage = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const Homepage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2">
           {/* Text Content Section */}
             <div className="order-2 sm:order-1 flex flex-col justify-center gap-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl text-white font-bold ">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl text-black font-bold ">
               We serve the richest <span className="text-fontcolor font-cursive">Coffee</span> in the city
               </h1>
               <div className="">
@@ -21,7 +22,7 @@ const Homepage = () => {
                 src={Heroimg} alt="" 
               />
               <div className="bg-gradient-to-t from-primary to-secondary absolute top-10 left-10 p-3 rounded-xl">
-                <h1>Hey Coder</h1>
+                <h1>Good Time</h1>
               </div>
               <div className="bg-gradient-to-t from-primary to-secondary absolute bottom-10 right-10 p-3 rounded-xl">
                 <h1>Good Coffee</h1>
@@ -30,6 +31,9 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+
+      {/* Services Section */}
+      <Services />
     </>
   )
 }

@@ -11,10 +11,10 @@ export default {
         cursive: ["Brithstone"]
       },
       colors: {
-        primary: "#99582a",
-        secondary: "#bb9457",
+        primary: "#bc6c25",
+        secondary: "#dda15e",
         fontcolor: "#9c6644",
-        brandDark: "#582f0e",
+        brandDark: "#faedcd",
       },
       container: {
         center: true,
