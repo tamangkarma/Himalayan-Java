@@ -72,9 +72,7 @@ const Services = () => {
                 )
              })
             }
-            <div className="">
-
-            </div>
+            
           </div>
         </div>
       </div>

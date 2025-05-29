@@ -11,9 +11,9 @@ export default {
         cursive: ["Brithstone"]
       },
       colors: {
-        primary: "#bc6c25",
-        secondary: "#dda15e",
-        fontcolor: "#9c6644",
+        primary: "#bde0fe",
+        secondary: "#edf2f4",
+        fontcolor: "#fb8b24",
         brandDark: "#faedcd",
       },
       container: {
