@@ -54,7 +54,7 @@ const Services = () => {
                     className="rounded-2xl bg-white hover:bg-primary hover:text-white shadow-xl duration-200 max-w-[300px] group relative"
                     >
                         {/* Image Section */}
-                        <div className="h-[122px">
+                        <div className="h-[122px]">
                             <img
                              src={data.img} 
                              alt="" 
