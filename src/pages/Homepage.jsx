@@ -5,7 +5,6 @@ import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
 import { GiFoodTruck } from "react-icons/gi";
 import ShortAdBanner from "../components/Navbar/Advertisement";
-import HimalayanJavaBanner from "../components/Navbar/coffedaybanner";
 
 
 const Homepage = () => {
@@ -111,9 +110,6 @@ const Homepage = () => {
       {/* Advertisement Section */}
       <ShortAdBanner/>
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 to-blue-900 flex items-center justify-center p-4">
-      <HimalayanJavaBanner />
-    </div>
     </>
   );
 };
