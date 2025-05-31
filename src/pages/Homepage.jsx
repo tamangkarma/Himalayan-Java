@@ -5,7 +5,7 @@ import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
 import { GiFoodTruck } from "react-icons/gi";
 import ShortAdBanner from "../components/Navbar/Advertisement";
-
+import OurLocations from "../components/Navbar/locations";
 
 const Homepage = () => {
   return (
@@ -15,13 +15,13 @@ const Homepage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* Text Content Section */}
             <div className="order-2 sm:order-1 flex flex-col justify-center gap-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl text-black font-bold ">
+              <h1 className="text-5xl ml-4 sm:ml-0 sm:text-6xl lg:text-7xl text-black font-bold ">
                 We serve the richest{" "}
                 <span className="text-fontcolor font-cursive">Coffee</span> in
                 the city
               </h1>
               <div className="">
-                <button className="bg-[#e36414] border-2 border-none rounded-full px-4 py-2 hover:scale-105 duration-200">
+                <button className="bg-[#e36414] border-2 ml-4 sm:ml-0 border-none rounded-full px-4 py-2 hover:scale-105 duration-200">
                   Life's a latte better with coffee.
                 </button>
               </div>
@@ -108,8 +108,9 @@ const Homepage = () => {
       </div>
 
       {/* Advertisement Section */}
-      <ShortAdBanner/>
+      <ShortAdBanner />
 
+      <OurLocations/>
     </>
   );
 };

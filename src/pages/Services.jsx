@@ -1,7 +1,6 @@
 import Img1 from "../../public/coffee photo/espresso1.png";
 import Img2 from "../../public/coffee photo/Cappuccino.png";
 import Img3 from "../../public/coffee photo/americano.png";
-import Img4 from "../../public/coffee photo/latte.png"
 
 
 const ServicesData = [
