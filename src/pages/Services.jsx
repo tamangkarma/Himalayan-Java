@@ -1,7 +1,9 @@
 import Img1 from "../../public/coffee photo/espresso1.png";
 import Img2 from "../../public/coffee photo/Cappuccino.png";
 import Img3 from "../../public/coffee photo/americano.png";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ServicesData = [
     {
@@ -21,7 +23,7 @@ const ServicesData = [
     {
         id: 3,
         img: Img3,
-        name: "Americanno",
+        name: "Americano",
         description: "An Americano is a classic espresso-style drink with a smooth and well-rounded flavor. ",
         aosDelay: "300",
     },
@@ -29,13 +31,23 @@ const ServicesData = [
 ]
 
 const Services = () => {
+
+  useEffect(()=> {
+    Aos.init({duration:1200});
+  })
+
+
+
+
   return (
     <>
       <div className="py-10">
         <div className="container">
           {/* header title */}
-          <div className="text-center mb-20 ">
-            <h1 className="text-4xl font-bold font-cursive text-gray-800">
+          <div className="text-center mb-20 " dataAos="fade-right">
+            <h1 className="text-4xl font-bold font-cursive text-gray-800"
+            data-aos= "fade-up"
+            >
               Best Coffee For You
             </h1>
           </div>
@@ -50,7 +62,7 @@ const Services = () => {
                     data-aos="fade-up"
                     data-aos-delay={data.aosDelay}
                     key={index}
-                    className="rounded-2xl bg-white hover:bg-primary hover:text-white shadow-xl duration-200 max-w-[300px] group relative"
+                    className="rounded-2xl bg-white hover:bg-amber-600 hover:text-white shadow-xl duration-200 max-w-[300px] group relative"
                     >
                         {/* Image Section */}
                         <div className="h-[122px]">

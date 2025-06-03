@@ -6,17 +6,17 @@ import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-[#edf2f4] text-white flex justify-between items-center p-4">
+      <nav className="bg-[#edf2f4] flex justify-between items-center p-4">
         <div>
           <img className="h-16 sm:h-14 md:h-12 ml-6 text-white" src="/public/coffee photo/java-newlogo.png" alt="logo" />
         </div>
         <div>
-          <ul className="space-x-6 text-black hidden sm:flex sm:mr-0 md:mr-6 ">
+          <ul className="space-x-6 text-black font-light hidden sm:flex sm:mr-0 md:mr-6 ">
             {navData.map((index) => (
               <li key={index} className="hover:text-black hover:scale-90 duration-150">
                 <NavLink
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active underline underline-offset-4 text-black" : ""
+                    isPending ? "pending" : isActive ? "active underline underline-offset-4 text-amber-900" : ""
                   }
                   to={index.url}
                 >

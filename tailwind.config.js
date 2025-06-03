@@ -13,7 +13,6 @@ export default {
       colors: {
         primary: "#bde0fe",
         secondary: "#edf2f4",
-        fontcolor: "#fb8b24",
         brandDark: "#faedcd",
       },
       container: {

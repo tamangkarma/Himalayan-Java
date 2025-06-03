@@ -6,8 +6,17 @@ import { IoFastFood } from "react-icons/io5";
 import { GiFoodTruck } from "react-icons/gi";
 import ShortAdBanner from "../components/Navbar/Advertisement";
 import OurLocations from "../components/Navbar/locations";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Homepage = () => {
+
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  });
+
+
   return (
     <>
       <div className=" min-h-[550px] sm:min-h-[600px] bg-[#f9f7f3] flex justify-center items-center text-white ">
@@ -17,11 +26,11 @@ const Homepage = () => {
             <div className="order-2 sm:order-1 flex flex-col justify-center gap-6">
               <h1 className="text-5xl ml-4 sm:ml-0 sm:text-6xl lg:text-7xl text-black font-bold ">
                 We serve the richest{" "}
-                <span className="text-fontcolor font-cursive">Coffee</span> in
+                <span className="text-amber-900 font-cursive">Coffee</span> in
                 the city
               </h1>
               <div className="">
-                <button className="bg-[#e36414] border-2 ml-4 sm:ml-0 border-none rounded-full px-4 py-2 hover:scale-105 duration-200">
+                <button className="bg-amber-900 border-2 ml-4 sm:ml-0 border-none rounded-full px-4 py-2 hover:scale-105 duration-200">
                   Life's a latte better with coffee.
                 </button>
               </div>
@@ -53,21 +62,27 @@ const Homepage = () => {
                 src={BannerImg}
                 alt=""
                 className="w-full relative max-w-[350px] mx-auto drop-shadow-2xl sm:mt-10 "
+                data-aos= "fade-right"
               />
             </div>
 
             {/* Text content section */}
             <div className="flex flex-col items-center justify-center gap-6 sm:py-6 ">
-              <h1 className="text-3xl sm:text-4xl font-bold font-cursive">
+              <h1 className="text-3xl sm:text-4xl font-bold font-cursive"
+              data-aos="fade-left"
+              >
                 Premium Blen Coffee
               </h1>
-              <p className="text-sm px-4 sm:px-0 text-gray-500 tracking-wide leading-5">
+              <p 
+              className="text-sm px-4 sm:px-0 text-gray-500 tracking-wide leading-5"
+              data-aos="fade-up"
+              >
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
                 saepe ipsam fugiat recusandae repudiandae ad repellendus
               </p>
 
               <div className="grid grid-cols-2 gap-6">
-                <div className="flex flex-col gap-4 ml-4 sm:ml-0">
+                <div className="flex flex-col gap-4 ml-4 sm:ml-0" data-aos="fade-up">
                   <div>
                     <div className="flex items-center gap-3">
                       <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100" />
@@ -90,7 +105,7 @@ const Homepage = () => {
                   </div>
                 </div>
 
-                <div className="border-l-4 border-primary/50 pl-6 space-y-3">
+                <div className="border-l-4 border-primary/50 pl-6 space-y-3" data-aos="fade-left">
                   <h1 className="text-2xl  font-bold font-cursive">
                     Tea Lover
                   </h1>

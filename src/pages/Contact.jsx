@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-purple-200 via-blue-200 to-blue-300 font-sans">
+    <div className="min-h-[80vh] flex items-center justify-center  font-sans">
       <div className="bg-white p-8 rounded-2xl shadow-2xl max-w-md my-10 mx-10 sm:mx-0 w-full">
         <h2 className="text-2xl font-bold text-coffee-900 mb-2 tracking-wide text-center">
           Contact Himalayan Java Coffee
@@ -40,7 +40,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-coffee-800 hover:bg-coffee-900 text-white py-2 rounded-md font-semibold transition"
+            className="w-full bg-amber-600 hover:bg-amber-900 border text-white py-2 rounded-md font-semibold transition"
           >
             Send Message
           </button>

@@ -41,7 +41,7 @@ const OurLocations = () => {
     speed: 500,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -106,8 +106,7 @@ const OurLocations = () => {
                           Lorem ipsum dolor, sit amet consectetur adipisicing
                           elit. Veritatis tenetur quo, itaque repudiandae
                           possimus obcaecati eius voluptatibus incidunt dolorem.
-                          Nesciunt voluptas illum eaque nostrum, excepturi nisi
-                          velit sed earum beatae?
+                          Nesciunt voluptas illum eaque nostrum,
                         </h1>
                       </div>
                     </div>
