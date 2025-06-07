@@ -21,6 +21,7 @@ const Homepage = () => {
     <>
     <div>
       <p>This is just the demo</p>
+      <p>Hello updated</p>
     </div>
       <div className=" min-h-[550px] sm:min-h-[600px] bg-[#f9f7f3] flex justify-center items-center text-white ">
         <div className="container pb-8 sm:pb-0">
